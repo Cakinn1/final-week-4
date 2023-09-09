@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Lab</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/fd56eb3ace.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <!-- THIS WAS ONLY DESIGNED TO TEST HITTING API'S IT IS NOT
+  WORKING ON PHONE RESOULTION AT THIS MOMENT - 28/1/23 -->
+
+  <body>
+    <section id="landing__page">
+      <nav>
+        <div class="nav__wrapper">
+          <figure class="nav__img--wrapper">
+            <img
+              class="nav__img"
+              src="/assets/Screenshot 2023-04-27 at 6.14.24 pm.png"
+              alt=""
+            />
+          </figure>
+          <ul>
+            <li><a class="nav__link" href="#">Home</a></li>
+            <li><a href="#browse">Browse</a></li>
+            <li><a class="nav__link" href="#">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="header__wrapper">
+        <h1 class="header__korean--para">영화 연구소!</h1>
+        <header>Movie Lab</header>
+        <p class="header__para">Best Movie Browsing Website!</p>
+        <a href="#browse"
+          ><button class="header__btn">Click To Browse!</button></a
+        >
+      </div>
+      <div class="video__wrapper">
+        <video class="landing__video" width="1200" height="600" autoplay muted>
+          <source src="/assets/Night Drive.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </section>
+    <main>
+      <section id="browse">
+        <div class="row">
+          <div class="browse__wrapper">
+            <div class="browse__info--wrapper">
+              <h2 class="browse__header">
+                Search For Any Movie, We Have It All!
+              </h2>
+              <h3 class="browse__para">
+                Click on search icon, then type the movie.
+              </h3>
+            </div>
+            <div class="browse__btn--wrapper">
+              <input
+                class="browse__input"
+                type="search"
+                placeholder="Search By Title!"
+                onchange="onSearchChange(event)"
+              />
+              <button class="browse__btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="loader">
+          <i class="fa-solid fa-spinner"></i>
+        </div>
+        <section id="browse__api">
+          <div class="browse__row">
+            <div class="browse__interactive--search-bar">
+              <h2 class="search__bar">Search Results For: ""</h2>
+            </div>
+            <div class="movies">
+              <div class="movie">
+                <figure class="movie__img--wrapper">
+                  <img src="assets/anime.test.jpeg" class="movie__img" />
+                </figure>
+                <div class="movie__info--wrapper">
+                  <p class="movie__title">Js Title</p>
+                  <a href="https://google.com" target="_blank"
+                    ><i class="fa fa-external-link" aria-hidden="true"></i
+                  ></a>
+                  <p class="movie__date">JS Date</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+    
+  </body>
+  <script src="/app.js"></script>
+  <script src="/user.js"></script>
+</html>

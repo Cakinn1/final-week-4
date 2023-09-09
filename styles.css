@@ -1,0 +1,360 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: auto 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+/*
+
+
+GENERAL
+
+
+
+*/
+
+.row {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+.browse__row {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+li {
+  padding-right: 16px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+
+button {
+  cursor: pointer;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* 
+
+
+NAV
+
+
+
+*/
+
+nav {
+  padding: 8px 24px;
+  background-color: #f8eeec;
+}
+
+.nav__img {
+  width: 200px;
+  height: 80px;
+}
+
+.nav__wrapper {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__link {
+  cursor: not-allowed;
+}
+
+/* 
+
+
+LANDING PAGE
+
+
+
+*/
+
+#landing__page {
+  height: calc(100vh);
+}
+
+.header__wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 1200px;
+  width: 100%;
+  z-index: 1;
+}
+
+.header__korean--para {
+  font-size: 24px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+header {
+  font-size: 64px;
+  font-weight: bold;
+}
+
+.header__para {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.header__btn {
+  padding: 12px 24px;
+  margin-top: 8px;
+  border-radius: 999px;
+  font-size: 16px;
+  max-width: 240px;
+  width: 100%;
+  border: none;
+  background-color: #1b1b1b;
+  color: #fff;
+  font-weight: bold;
+}
+
+.header__btn:hover {
+  opacity: 0.9;
+}
+/* 
+
+
+LANDING VIDEO
+
+
+
+*/
+
+.landing__video {
+  position: absolute;
+  width: 100%;
+  height: calc(100vh - 122.22px);
+  object-fit: cover;
+  opacity: 0.8;
+  z-index: -1;
+}
+
+#browse::before {
+  content: "";
+  background: url("assets/wave\ \(8\).svg");
+  position: absolute;
+  width: 100%;
+  height: 18vw;
+  top: 1px;
+  left: 0;
+  z-index: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform: translateY(-100%);
+}
+
+/* 
+
+
+BROWSE INFO
+
+
+
+*/
+
+#browse {
+  position: relative;
+  background-color: #f8eeec;
+  padding-bottom: 32px;
+  height: calc(100vh - 80px);
+}
+
+.browse__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  padding: 60px 60px;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  border: none;
+  background-color: #1b1b1b;
+}
+
+.browse__header {
+  color: #fff;
+}
+
+.browse__btn--wrapper {
+  margin-left: 8px;
+}
+
+.browse__input {
+  padding: 16px 24px;
+  border-radius: 999px;
+  border: none;
+  position: relative;
+}
+
+.browse__input::-webkit-search-cancel-button {
+  display: none;
+}
+
+.browse__btn {
+  padding: 12px;
+  border-radius: 999px;
+  border: none;
+}
+
+.browse__para {
+  color: #fff;
+  font-weight: 100;
+  margin-top: 4px;
+}
+
+.browse__info--wrapper {
+  margin-right: 8px;
+}
+
+.browse__input::placeholder {
+  font-weight: bold;
+}
+
+/*
+
+
+
+API BROWSING 
+
+
+
+*/
+
+#browse__api {
+  background-color: #f8eeec;
+  padding: 32px 0;
+}
+
+.search__bar {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+/*
+
+
+MOVIE WORK
+
+
+
+*/
+
+.movies {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  visibility: hidden;
+}
+
+.movie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(100% / 3.3);
+  height: 550px;
+  max-height: 100%;
+  background-color: #e7decc;
+  border-radius: 24px;
+  margin: 16px 16px;
+}
+
+.movie__img--wrapper {
+  margin: 0;
+}
+
+.ratings__wrapper {
+  margin: 4px 0;
+}
+
+.movie__img {
+  height: 400px;
+  width: 300px;
+  margin: 32px 32px 0 32px;
+}
+.movie__info--wrapper {
+  margin: 0;
+}
+
+.movie__info--wrapper {
+  text-align: center;
+}
+
+.fa-external-link {
+  font-size: 16px;
+  margin: 12px 0;
+  color: #1b1b1b;
+}
+
+.movie__title {
+  font-size: 20px;
+  font-weight: bold;
+  width: 300px;
+  color: #1b1b1b;
+}
+
+.movie__date {
+  font-weight: bold;
+  color: #1b1b1b;
+}
+
+.browse__row {
+  display: none;
+}
+
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+  color: #1b1b1b;
+  display: none;
+}
+
+.fa-spinner {
+  animation: spin 600ms infinite linear;
+  width: 60px;
+  height: 60px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
